@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+ {% block title %}
+This Post Title
+ {% endblock title %}
+
+ {% block css_file %}
+ <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+ {% endblock css_file %}
+
+ {% block content %}
+ <section id="summary">
+ <h2>Post Title</h2>
+ <article>
+ <img src="{%static "blog/images/mountains.jpg"%}" alt="">
+ 
+ <address>By Mario</address>
+ <div>Last Updated</div>
+ </article>
+ </section>
+
+ <main>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde qui dolores vel accusamus eveniet quos deserunt voluptatum velit iste dignissimos magni ad, eos modi, voluptas atque expedita nulla? Cum, quisquam.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia suscipit quam nulla ipsam. Asperiores, minus dolorum ipsa error, amet deserunt nam id laboriosam, dolores maxime quis quo. Voluptas, ipsam?</p>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, qui, itaque natus minima quam vitae laudantium quaerat aut facilis molestiae libero? Quia ratione numquam quasi tenetur maiores ducimus corrupti similique.</p>
+ </main>
+ {% endblock content %}
