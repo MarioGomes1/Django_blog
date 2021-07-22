@@ -78,7 +78,7 @@ def starting_page(request):
     sorted_posts = sorted(all_posts, key=get_date)
     latest_post = sorted_posts[-3:]
     return render(request, 'blog/index.html', {
-        posts: latest_post
+        "posts": latest_post
     })
 
 
