@@ -3,7 +3,7 @@
 
 
  {% block title %}
-This Post Title
+{{post.title}}
  {% endblock title %}
 
  {% block css_file %}
@@ -14,7 +14,7 @@ This Post Title
  <section id="summary">
  <h2>Post Title</h2>
  <article>
- <img src="{%static "blog/images/mountains.jpg"%}" alt="">
+ <img src="{%static "blog/images/"|add:post.image %}" alt="">
  
  <address>By Mario</address>
  <div>Last Updated</div>
@@ -26,4 +26,4 @@ This Post Title
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quia suscipit quam nulla ipsam. Asperiores, minus dolorum ipsa error, amet deserunt nam id laboriosam, dolores maxime quis quo. Voluptas, ipsam?</p>
      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, qui, itaque natus minima quam vitae laudantium quaerat aut facilis molestiae libero? Quia ratione numquam quasi tenetur maiores ducimus corrupti similique.</p>
  </main>
- {% endblock content %}
+ {% endblock content %}``
